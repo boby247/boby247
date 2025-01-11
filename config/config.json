@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "new-web-part-1-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/newWebPart1/NewWebPart1WebPart.js",
+          "manifest": "./src/webparts/newWebPart1/NewWebPart1WebPart.manifest.json"
+        }
+      ]
+    },
+    "pallavi-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/pallavi/PallaviWebPart.js",
+          "manifest": "./src/webparts/pallavi/PallaviWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "NewWebPart1WebPartStrings": "lib/webparts/newWebPart1/loc/{locale}.js",
+    "PallaviWebPartStrings": "lib/webparts/pallavi/loc/{locale}.js"
+  }
+}
